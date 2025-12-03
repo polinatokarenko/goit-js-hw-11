@@ -24,3 +24,13 @@ export const clearGallery = () => {
     const ul = document.querySelector('.gallery');
     ul.innerHTML = "";
 }
+
+export const showLoader = () => {
+    const loader = document.querySelector('.loader');
+    loader.classList.remove('hidden');
+};
+
+export const hideLoader = () => {
+    const loader = document.querySelector('.loader');
+    loader.classList.add('hidden');
+};
