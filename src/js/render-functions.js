@@ -8,10 +8,12 @@ export const createGallery = images => {
             <a href="${image.largeImageURL}">
                 <img src="${image.webformatURL}" alt="${image.tags}" />
             </a>
-            <p>Likes: ${image.likes}</p>
-            <p>Views: ${image.views}</p>
-            <p>Comments: ${image.comments}</p>
-            <p>Downloads: ${image.downloads}</p>
+            <ul class="description">
+            <li><span>Likes:</span> ${image.likes}</li>
+            <li><span>Views:</span> ${image.views}</li>
+            <li><span>Comments:</span> ${image.comments}</li>
+            <li><span>Downloads:</span> ${image.downloads}</li>
+            </ul>
         </li>
     `).join("");
 

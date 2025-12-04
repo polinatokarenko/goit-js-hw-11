@@ -12,7 +12,7 @@ const input = document.querySelector('input');
 
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
-
+    clearGallery();
     showLoader();
 
     const query = event.currentTarget.elements['search-text'].value.trim();
