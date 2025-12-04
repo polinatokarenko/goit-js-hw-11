@@ -1,11 +1,11 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-import { getImagesByQuery } from "./pixabay-api.js";
-import { createGallery } from "./render-functions.js";
-import { clearGallery } from "./render-functions.js";
-import { showLoader } from "./render-functions.js";
-import { hideLoader } from "./render-functions.js";
+import { getImagesByQuery } from "./js/pixabay-api.js";
+import { createGallery } from "./js/render-functions.js";
+import { clearGallery } from "./js/render-functions.js";
+import { showLoader } from "./js/render-functions.js";
+import { hideLoader } from "./js/render-functions.js";
 
 const form = document.querySelector('.form');
 const input = document.querySelector('input');
