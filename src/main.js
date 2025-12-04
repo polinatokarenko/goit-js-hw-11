@@ -10,6 +10,8 @@ import { hideLoader } from "./js/render-functions.js";
 const form = document.querySelector('.form');
 const input = document.querySelector('input');
 
+hideLoader();
+
 form.addEventListener('submit', async (event) => {
     event.preventDefault();
     clearGallery();
